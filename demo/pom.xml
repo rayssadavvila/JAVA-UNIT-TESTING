@@ -10,12 +10,23 @@
 
     <properties>
         <java.version>8</java.version>
+        <junit.version>5.10.2</junit.version>
         <java.compiler.target>8</java.compiler.target>
-         <java.compiler.source>8</java.compiler.source>
+        <java.compiler.source>8</java.compiler.source>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <maven.compiler.plugin.version>3.13.0</maven.compiler.plugin.version>
     </properties>
+
+    <dependencies>
+       <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+    </dependency>
+        
+    </dependencies>
 
     <build>
         <plugins>
