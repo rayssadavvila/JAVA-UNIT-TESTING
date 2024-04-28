@@ -20,4 +20,20 @@ public class SimpleMathTest {
         double expected = 8.2D;
         Assertions.assertEquals(expected , actual); 
     }
+
+    @Test
+    void test03(){
+        SimpleMath math = new SimpleMath();
+        Double actual = math.subtraction(6.2D, 2D);
+        double expected = 5.2D;
+        Assertions.assertEquals(expected, actual, "6.2 - 2 did not produce 5.2!"); // The message is shown because there is an error in the test.
+    }
+
+    @Test
+    void test04(){
+        SimpleMath math = new SimpleMath();
+        Double actual = math.subtraction(6.2D, 2D);
+        double expected = 4.2D;
+        Assertions.assertEquals(expected, actual, "6.2 - 2 produce 4.2!"); // Don't show the message because the test is ok.
+    }
 }
