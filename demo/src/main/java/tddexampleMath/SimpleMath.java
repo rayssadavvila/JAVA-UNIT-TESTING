@@ -1,4 +1,4 @@
-package tddexample;
+package tddexampleMath;
 
 public class SimpleMath {
     public Double sum(Double firstNumber, Double secondNumber){
