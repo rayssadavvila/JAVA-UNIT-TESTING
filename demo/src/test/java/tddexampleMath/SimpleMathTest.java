@@ -38,4 +38,19 @@ public class SimpleMathTest {
         double expected = 4.2D;
         Assertions.assertEquals(expected, actual, "6.2 - 2 produce 4.2!"); // Don't show the message because the test is ok.
     }
+
+    @Test
+    void testSum(){
+        SimpleMath math = new SimpleMath();
+        double firstNumber = 6.5D;
+        double secondNumber = 2.3D;
+
+        Double actual = math.sum(firstNumber,secondNumber);
+
+        Double expected = 8.8D;
+
+        assertEquals(expected, actual, () -> firstNumber + " + " + secondNumber + "did not produce" + expected);
+        assertNotNull(actual);
+    }
 }
+
