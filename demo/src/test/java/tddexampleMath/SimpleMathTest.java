@@ -27,6 +27,8 @@ public class SimpleMathTest {
         Double actual = math.subtraction(6.2D, 2D);
         double expected = 5.2D;
         Assertions.assertEquals(expected, actual, "6.2 - 2 did not produce 5.2!"); // The message is shown because there is an error in the test.
+        Assertions.assertNotEquals(3.2, actual);
+        Assertions.assertNotNull(actual);
     }
 
     @Test
