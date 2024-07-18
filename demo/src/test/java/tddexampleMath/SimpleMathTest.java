@@ -52,5 +52,18 @@ public class SimpleMathTest {
         assertEquals(expected, actual, () -> firstNumber + " + " + secondNumber + "did not produce" + expected);
         assertNotNull(actual);
     }
+
+    @Test
+    void testSub(){
+        SimpleMath math = new SimpleMath();
+        double firstNumber = 6.5D;
+        double secondNumber = 2.3D;
+
+        Double actual = math.subtraction(firstNumber,secondNumber);
+        Double expected = 4.2D;
+
+        assertEquals(expected, actual, () -> firstNumber + " + " + secondNumber + "did not produce" + expected);
+        assertNotNull(actual);
+    }
 }
 
